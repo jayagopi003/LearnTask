@@ -1,5 +1,7 @@
 package org.actions;
 
+import java.util.Scanner;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -13,6 +15,14 @@ public class actionTask {
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\DELL\\eclipse-workspace\\LearnTask\\Driver\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		
+		Scanner s = new Scanner(System.in);
 		
+		System.out.println("Enter a Number");
+		int n = s.nextInt();
+		if(n%2==0) {
+			System.out.println("The number is even");
+		}else {
+			System.out.println("The number is Odd");
+		}
 	}
 }
